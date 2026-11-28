@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrinho.css">
     <title>BurgDelivery</title>
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Burger</a>
-        <nav>
+        <a href="#inicio" class="logo">Burger</a>
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu"
+        aria-expanded="false" aria-controls="menu-principal" type="button">
+        <a href="./img/icons8-menu-hambúrguer-30.png"></a>
+        </button>
+
+        <nav id="menu-principal" class="menu-principal">
             <a href="#inicio">Início</a>
             <a href="#cardapio">Cardápio</a>
             <a href="#sobre">Sobre</a>
             <a href="#contato">Contato</a>
+
+            <a href="cardapio" class="btn nav-cta">
+                Peça Agora
+            </a>
         </nav>
-        <a href="#cardapio" class="btn">Peça Agora</a>
+
+        <div class="header-actions">
+            <button type="button" class="btn btn-outline btn-sm" id="btn-login"> Entrar </button>
+            <button type="button" class="btn btn-sm" id="btn-cart" aria-label="Abrir carrinho">🛒 <span id="cart-count">0</span></button>
+        </div>
     </header>
 
-    <section id="home" class="hero-wrapper">
+    <section id="inicio" class="hero-wrapper">
         <article class="hero">
             <div>
                 <h1>O Melhor Hamburguer da Cidade</h1>
@@ -52,7 +67,7 @@
                 <h3>Burguer Duplo</h3>
                 <p>Pão brioche, 180g de carne, queijo cheddar, alface, tomate e molho especial</p>
                 <strong>R$ 29,90</strong>
-                <a href="https://wa.me/5571999999999?text=Ol%C3%A1%2C%20tudo%20bem%3F" class="btn">Pedir</a>
+                <a href="https://wa.me/5571999999999?text=Ol%C3%A1%2C%20tudo%20bem%3F" class="btn">Adicionar ao carrinho</a>
             </li>
 
             <li>
